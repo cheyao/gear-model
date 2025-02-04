@@ -12,10 +12,10 @@ module top() {
 }
 
 module bot() {
-	BRADIUS = 38.5 / 2;
+	BRADIUS = 42 / 2;
 	BGEAR_COUNT = 40;
 
-	gear(number_of_teeth=BGEAR_COUNT, mm_per_tooth=(2*3.1415*BRADIUS)/BGEAR_COUNT, hole_diameter=0, thickness=6, twist=5, clearance=0.8);
+	gear(number_of_teeth=BGEAR_COUNT, mm_per_tooth=(2*3.1415*BRADIUS)/BGEAR_COUNT, hole_diameter=0, thickness=6, twist=4.5, clearance=0.8);
 }
 
 module body() {
@@ -49,4 +49,3 @@ difference() {
 
 	cylinder(h=8.3, d=18.4);
 }
-
